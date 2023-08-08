@@ -19,6 +19,11 @@ variable "subnet_availability_zone" {
     type = string
     default = "ap-south-1b"
 }
+variable "subnet_availability_zone2" {
+    description = "Availability_zone for subnet"
+    type = string
+    default = "ap-south-1b"
+}
 variable "security_group_name" {
     description = "prefix for the security_group_name"
     type = string

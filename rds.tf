@@ -1,7 +1,7 @@
 resource "aws_subnet" "database_subnet" {
      vpc_id = aws_vpc.awsvpc.id
     cidr_block = var.subnet4_cidr
-    availability_zone = var.availability_zone2
+    availability_zone = var.subnet_availability_zone
     tags = {
       Name = "Database_subnet2"  
        }
@@ -10,7 +10,7 @@ resource "aws_subnet" "database_subnet" {
 resource "aws_subnet" "database_subnet2" {
      vpc_id = aws_vpc.awsvpc.id
     cidr_block = var.subnet5_cidr
-    availability_zone = var.availability_zone
+    availability_zone = var.subnet_availability_zone2
     tags = {
       Name = "Database_subnet2"   
        }
