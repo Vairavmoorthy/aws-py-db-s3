@@ -17,7 +17,7 @@ variable "subnet_cidr_block" {
 variable "subnet_availability_zone" {
     description = "Availability_zone for subnet"
     type = string
-    default = "ap-south-1b"
+    default = "ap-south-1a"
 }
 variable "subnet_availability_zone2" {
     description = "Availability_zone for subnet"
