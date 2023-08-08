@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 script {
-                    def branchName = 'infra'
+                    def branchName = 'slave'
                     checkout([$class: 'GitSCM', branches: [[name: branchName]], userRemoteConfigs: [[url: 'https://github.com/Vairavmoorthy/aws-py-db-s3.git']]])
                 }
             }
