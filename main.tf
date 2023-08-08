@@ -99,7 +99,7 @@ resource "aws_security_group" "appsec" {
 }
 # Defining security group for db
 resource "aws_security_group" "db_sec" {
-    vpc_id = aws_vpc.cloudvpc.id
+    vpc_id = aws_vpc.awsvpc.id
   # Inbound rules
   ingress {
     from_port = 3306
