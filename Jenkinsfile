@@ -17,7 +17,7 @@ pipeline {
                     withAWS(credentials: '112') {
                         //sh 'terraform init'
                         // sh 'terraform plan -out=tfplan'
-                        sh 'terraform apply -parallelism=6 -auto-approve'
+                        sh 'terraform destroy -parallelism=6 -auto-approve'
                     }
                 }
             }
