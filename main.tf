@@ -66,7 +66,7 @@ resource "aws_instance" "ubuntu-20" {
 
 # Defining security group for  appsec
 resource "aws_security_group" "appsec" {
-  vpc_id = aws_vpc.cloudvpc.id
+  vpc_id = aws_vpc.awsvpc.id
    # Inbound rules
     ingress {
         from_port = 80

@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Vairavmoorthy/aws-py-db-s3.git'
-            }
-        }
+                script {
+                    def branchName = 'infra' // Replace with the name of the branch you want to download
+                    checkout([$class: 'GitSCM', branches: [[name: infra]], userRemoteConfigs: [[url: 'https://github.com/Vairavmoorthy/aws-py-db-s3.git']]])
 
         stage('Build Infrastructure') {
             steps {
